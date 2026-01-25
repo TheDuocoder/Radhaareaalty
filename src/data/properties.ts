@@ -1,0 +1,392 @@
+export interface Property {
+  id: number;
+  title: string;
+  price: number;
+  location: string;
+  city: string;
+  images: string[];
+  beds: number;
+  baths: number;
+  area: number;
+  type: "Apartment" | "House" | "Villa" | "Condo" | "Penthouse";
+  description: string;
+  features: string[];
+  agent: {
+    name: string;
+    phone: string;
+    email: string;
+    image: string;
+  };
+  featured: boolean;
+  yearBuilt: number;
+  parking: number;
+}
+
+export const properties: Property[] = [
+  {
+    id: 1,
+    title: "Modern Luxury Villa with Pool",
+    price: 2500000,
+    location: "Beverly Hills, CA",
+    city: "Los Angeles",
+    images: [
+      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80",
+      "https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800&q=80",
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
+    ],
+    beds: 5,
+    baths: 4,
+    area: 4500,
+    type: "Villa",
+    description: "Stunning modern villa featuring floor-to-ceiling windows, an infinity pool, and panoramic city views. This architectural masterpiece offers the ultimate in luxury living with premium finishes throughout.",
+    features: ["Infinity Pool", "Smart Home", "Wine Cellar", "Home Theater", "Gym", "3-Car Garage"],
+    agent: {
+      name: "Sarah Johnson",
+      phone: "(310) 555-0123",
+      email: "sarah@urbanet.com",
+      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80",
+    },
+    featured: true,
+    yearBuilt: 2022,
+    parking: 3,
+  },
+  {
+    id: 2,
+    title: "Downtown Luxury Penthouse",
+    price: 1850000,
+    location: "Manhattan, NY",
+    city: "New York",
+    images: [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&q=80",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
+    ],
+    beds: 3,
+    baths: 3,
+    area: 2800,
+    type: "Penthouse",
+    description: "Experience the pinnacle of urban living in this stunning penthouse. Features include a private terrace, chef's kitchen, and breathtaking skyline views from every room.",
+    features: ["Private Terrace", "Concierge", "Doorman", "Rooftop Access", "Floor Heating"],
+    agent: {
+      name: "Michael Chen",
+      phone: "(212) 555-0456",
+      email: "michael@urbanet.com",
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80",
+    },
+    featured: true,
+    yearBuilt: 2021,
+    parking: 2,
+  },
+  {
+    id: 3,
+    title: "Waterfront Contemporary Home",
+    price: 1950000,
+    location: "Miami Beach, FL",
+    city: "Miami",
+    images: [
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80",
+      "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800&q=80",
+    ],
+    beds: 4,
+    baths: 3,
+    area: 3200,
+    type: "House",
+    description: "Spectacular waterfront property with private dock and stunning ocean views. Modern design meets coastal elegance in this beautifully appointed home.",
+    features: ["Private Dock", "Ocean View", "Pool", "Outdoor Kitchen", "Hurricane Windows"],
+    agent: {
+      name: "Isabella Martinez",
+      phone: "(305) 555-0789",
+      email: "isabella@urbanet.com",
+      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&q=80",
+    },
+    featured: true,
+    yearBuilt: 2020,
+    parking: 2,
+  },
+  {
+    id: 4,
+    title: "Elegant Brownstone Apartment",
+    price: 975000,
+    location: "Brooklyn Heights, NY",
+    city: "New York",
+    images: [
+      "https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=800&q=80",
+      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&q=80",
+      "https://images.unsplash.com/photo-1600573472592-401b489a3cdc?w=800&q=80",
+    ],
+    beds: 2,
+    baths: 2,
+    area: 1400,
+    type: "Apartment",
+    description: "Charming brownstone apartment combining classic architecture with modern amenities. High ceilings, exposed brick, and a private garden create the perfect urban retreat.",
+    features: ["Private Garden", "Exposed Brick", "Fireplace", "High Ceilings", "Laundry"],
+    agent: {
+      name: "Michael Chen",
+      phone: "(212) 555-0456",
+      email: "michael@urbanet.com",
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80",
+    },
+    featured: false,
+    yearBuilt: 1920,
+    parking: 0,
+  },
+  {
+    id: 5,
+    title: "Modern Beachfront Condo",
+    price: 850000,
+    location: "Santa Monica, CA",
+    city: "Los Angeles",
+    images: [
+      "https://images.unsplash.com/photo-1600047509358-9dc75507daeb?w=800&q=80",
+      "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&q=80",
+      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80",
+    ],
+    beds: 2,
+    baths: 2,
+    area: 1200,
+    type: "Condo",
+    description: "Wake up to stunning ocean views in this modern beachfront condo. Open floor plan, designer finishes, and direct beach access make this the perfect coastal lifestyle property.",
+    features: ["Ocean View", "Beach Access", "Gym", "Pool", "Concierge", "Balcony"],
+    agent: {
+      name: "Sarah Johnson",
+      phone: "(310) 555-0123",
+      email: "sarah@urbanet.com",
+      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80",
+    },
+    featured: true,
+    yearBuilt: 2019,
+    parking: 1,
+  },
+  {
+    id: 6,
+    title: "Historic Victorian Estate",
+    price: 3200000,
+    location: "Pacific Heights, CA",
+    city: "San Francisco",
+    images: [
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+      "https://images.unsplash.com/photo-1600573472592-401b489a3cdc?w=800&q=80",
+    ],
+    beds: 6,
+    baths: 5,
+    area: 5500,
+    type: "House",
+    description: "Magnificent Victorian estate with meticulously preserved original details and modern updates. Features stunning bay views, grand entertaining spaces, and lush gardens.",
+    features: ["Bay View", "Wine Cellar", "Garden", "Library", "Guest Suite", "Period Details"],
+    agent: {
+      name: "David Thompson",
+      phone: "(415) 555-0321",
+      email: "david@urbanet.com",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80",
+    },
+    featured: true,
+    yearBuilt: 1895,
+    parking: 2,
+  },
+  {
+    id: 7,
+    title: "Sleek Urban Loft",
+    price: 625000,
+    location: "Arts District, LA",
+    city: "Los Angeles",
+    images: [
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80",
+      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80",
+    ],
+    beds: 1,
+    baths: 1,
+    area: 950,
+    type: "Apartment",
+    description: "Industrial-chic loft in the heart of the Arts District. Soaring ceilings, exposed ductwork, and massive windows create an inspiring creative space.",
+    features: ["High Ceilings", "Exposed Brick", "Industrial Design", "Rooftop Access", "Pet Friendly"],
+    agent: {
+      name: "Sarah Johnson",
+      phone: "(310) 555-0123",
+      email: "sarah@urbanet.com",
+      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80",
+    },
+    featured: false,
+    yearBuilt: 2018,
+    parking: 1,
+  },
+  {
+    id: 8,
+    title: "Tropical Paradise Villa",
+    price: 2100000,
+    location: "Coral Gables, FL",
+    city: "Miami",
+    images: [
+      "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800&q=80",
+      "https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800&q=80",
+      "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&q=80",
+    ],
+    beds: 5,
+    baths: 4,
+    area: 4200,
+    type: "Villa",
+    description: "Mediterranean-inspired villa set among tropical gardens. Features include a resort-style pool, outdoor entertaining areas, and a gourmet kitchen perfect for hosting.",
+    features: ["Resort Pool", "Tropical Garden", "Outdoor Kitchen", "Guest House", "Spa"],
+    agent: {
+      name: "Isabella Martinez",
+      phone: "(305) 555-0789",
+      email: "isabella@urbanet.com",
+      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&q=80",
+    },
+    featured: false,
+    yearBuilt: 2017,
+    parking: 3,
+  },
+  {
+    id: 9,
+    title: "Mountain View Retreat",
+    price: 1450000,
+    location: "Aspen, CO",
+    city: "Aspen",
+    images: [
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
+      "https://images.unsplash.com/photo-1600047509358-9dc75507daeb?w=800&q=80",
+    ],
+    beds: 4,
+    baths: 3,
+    area: 3000,
+    type: "House",
+    description: "Stunning mountain retreat with breathtaking views and ski-in/ski-out access. Warm wood interiors, stone fireplace, and luxurious amenities create the perfect alpine getaway.",
+    features: ["Mountain View", "Ski Access", "Fireplace", "Hot Tub", "Game Room", "Mudroom"],
+    agent: {
+      name: "David Thompson",
+      phone: "(415) 555-0321",
+      email: "david@urbanet.com",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80",
+    },
+    featured: false,
+    yearBuilt: 2015,
+    parking: 2,
+  },
+  {
+    id: 10,
+    title: "Chic Downtown Studio",
+    price: 425000,
+    location: "Tribeca, NY",
+    city: "New York",
+    images: [
+      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&q=80",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80",
+    ],
+    beds: 0,
+    baths: 1,
+    area: 550,
+    type: "Apartment",
+    description: "Efficiently designed studio in trendy Tribeca. Features include a Murphy bed, full kitchen, and access to building amenities including gym and rooftop terrace.",
+    features: ["Doorman", "Gym", "Rooftop", "Laundry", "Storage", "Bike Room"],
+    agent: {
+      name: "Michael Chen",
+      phone: "(212) 555-0456",
+      email: "michael@urbanet.com",
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80",
+    },
+    featured: false,
+    yearBuilt: 2020,
+    parking: 0,
+  },
+  {
+    id: 11,
+    title: "Luxurious Golf Course Estate",
+    price: 2850000,
+    location: "Scottsdale, AZ",
+    city: "Scottsdale",
+    images: [
+      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+      "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800&q=80",
+    ],
+    beds: 5,
+    baths: 5,
+    area: 5800,
+    type: "Villa",
+    description: "Exceptional golf course estate with stunning desert views. Features include a putting green, infinity pool, outdoor fireplace, and a chef's kitchen with top-of-the-line appliances.",
+    features: ["Golf Course View", "Putting Green", "Infinity Pool", "Casita", "Smart Home"],
+    agent: {
+      name: "Sarah Johnson",
+      phone: "(310) 555-0123",
+      email: "sarah@urbanet.com",
+      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80",
+    },
+    featured: true,
+    yearBuilt: 2021,
+    parking: 4,
+  },
+  {
+    id: 12,
+    title: "Charming City Townhouse",
+    price: 1125000,
+    location: "Georgetown, DC",
+    city: "Washington DC",
+    images: [
+      "https://images.unsplash.com/photo-1600573472592-401b489a3cdc?w=800&q=80",
+      "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&q=80",
+      "https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=800&q=80",
+    ],
+    beds: 3,
+    baths: 2,
+    area: 2100,
+    type: "House",
+    description: "Beautifully renovated townhouse in historic Georgetown. Original hardwood floors, updated kitchen, and a private patio garden create the perfect blend of old-world charm and modern comfort.",
+    features: ["Patio Garden", "Hardwood Floors", "Fireplace", "Updated Kitchen", "Walkable"],
+    agent: {
+      name: "David Thompson",
+      phone: "(415) 555-0321",
+      email: "david@urbanet.com",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80",
+    },
+    featured: false,
+    yearBuilt: 1890,
+    parking: 1,
+  },
+];
+
+export const locations = ["All Locations", "Los Angeles", "New York", "Miami", "San Francisco", "Aspen", "Scottsdale", "Washington DC"];
+
+export const propertyTypes = ["All Types", "Apartment", "House", "Villa", "Condo", "Penthouse"];
+
+export const priceRanges = [
+  { label: "Any Price", min: 0, max: Infinity },
+  { label: "Under $500K", min: 0, max: 500000 },
+  { label: "$500K - $1M", min: 500000, max: 1000000 },
+  { label: "$1M - $2M", min: 1000000, max: 2000000 },
+  { label: "$2M - $3M", min: 2000000, max: 3000000 },
+  { label: "$3M+", min: 3000000, max: Infinity },
+];
+
+export const bedroomOptions = ["Any", "Studio", "1+", "2+", "3+", "4+", "5+"];
+
+export const testimonials = [
+  {
+    id: 1,
+    name: "Jennifer Williams",
+    role: "Homeowner",
+    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80",
+    review: "Urbanet made finding our dream home effortless. The team was professional, responsive, and truly understood what we were looking for. Couldn't be happier!",
+    rating: 5,
+  },
+  {
+    id: 2,
+    name: "Robert Martinez",
+    role: "Property Investor",
+    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80",
+    review: "As an investor, I need a reliable partner who understands the market. Urbanet has consistently delivered exceptional properties and invaluable market insights.",
+    rating: 5,
+  },
+  {
+    id: 3,
+    name: "Emily Chen",
+    role: "First-time Buyer",
+    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&q=80",
+    review: "Being a first-time buyer was overwhelming, but the Urbanet team guided me through every step. They found me the perfect apartment within my budget!",
+    rating: 5,
+  },
+];
