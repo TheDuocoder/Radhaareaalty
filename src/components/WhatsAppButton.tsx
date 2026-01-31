@@ -7,7 +7,7 @@ const WhatsAppButton = () => {
       href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-20 right-6 z-40 rounded-full shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-2xl animate-fade-in"
+      className="fixed bottom-10 right-6 z-40 rounded-full shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-2xl animate-fade-in"
       style={{
         animation: "float 3s ease-in-out infinite",
       }}
