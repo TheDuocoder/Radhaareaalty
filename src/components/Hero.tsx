@@ -105,7 +105,7 @@ const Hero = () => {
             }}
           >
             Find Your{" "}
-            <span style={{ color: "#7BC878" }}>Dream Home</span>
+            <span style={{ color: "#859a2e" }}>Dream Home</span>
             <br />
             With Radhaareaalty
           </h1>

@@ -95,7 +95,7 @@ const SearchBar = ({ onSearch }: SearchBarProps) => {
         <div className="flex items-end">
           <Button
             onClick={handleSearch}
-            style={{ backgroundColor: "#7BC878", color: "#000000" }}
+            style={{ backgroundColor: "#859a2e", color: "#000000" }}
             className="w-full h-12 hover:opacity-90 transition-opacity rounded-xl font-semibold"
           >
             <Search className="w-4 h-4 mr-2" />

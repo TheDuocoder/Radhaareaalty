@@ -55,7 +55,7 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button style={{ backgroundColor: "#7BC878", color: "#000000" }} className="hover:opacity-90 transition-opacity font-semibold">
+            <Button style={{ backgroundColor: "#859a2e", color: "#000000" }} className="hover:opacity-90 transition-opacity font-semibold">
               Add Property
             </Button>
           </div>

@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import "./Contact.css";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -227,14 +228,16 @@ const Contact = () => {
                   <Button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full md:w-auto urbanet-gradient text-primary-foreground"
+                    className="send-message-btn w-full md:w-auto urbanet-gradient text-primary-foreground"
                   >
                     {isSubmitting ? (
                       "Sending..."
                     ) : (
                       <>
-                        <Send className="w-4 h-4 mr-2" />
-                        Send Message
+                        <div className="svg-wrapper">
+                          <Send className="w-4 h-4" />
+                        </div>
+                        <span>Send Message</span>
                       </>
                     )}
                   </Button>

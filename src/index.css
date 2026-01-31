@@ -17,7 +17,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 220 20% 10%;
 
-    --primary: 220 70% 50%;
+    --primary: 82 49% 40%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 220 10% 96%;
@@ -66,7 +66,7 @@
     --popover: 220 20% 10%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 220 70% 55%;
+    --primary: 82 49% 40%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 220 15% 18%;
@@ -172,7 +172,7 @@
   }
 
   .urbanet-gradient {
-    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(220 80% 60%) 100%);
+    background: linear-gradient(135deg, #859a2e 0%, #6d7923 100%);
   }
 
   .urbanet-overlay {
