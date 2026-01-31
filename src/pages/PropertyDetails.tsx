@@ -17,6 +17,7 @@ import {
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PropertyCard from "@/components/PropertyCard";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { Button } from "@/components/ui/button";
 import { properties } from "@/data/properties";
 
@@ -328,6 +329,7 @@ const PropertyDetails = () => {
       )}
 
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 };

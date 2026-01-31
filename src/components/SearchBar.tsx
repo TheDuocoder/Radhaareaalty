@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Search, MapPin, Home, IndianRupee } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { locations, propertyTypes, priceRanges } from "@/data/properties";
+import "./SearchBar.css";
 
 interface SearchBarProps {
   onSearch: (filters: {
@@ -25,7 +26,7 @@ const SearchBar = ({ onSearch }: SearchBarProps) => {
   };
 
   return (
-    <div className="w-full max-w-4xl mx-auto bg-card rounded-2xl shadow-urbanet-xl p-4 md:p-6">
+    <div className="search-box w-full max-w-4xl mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
         {/* Location */}
         <div className="relative">

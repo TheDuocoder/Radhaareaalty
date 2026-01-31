@@ -1,6 +1,7 @@
 import { Users, Award, Building, Globe } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const stats = [
   { icon: Building, value: "2,500+", label: "Properties Sold" },
@@ -203,6 +204,7 @@ const About = () => {
       </section>
 
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 };

@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="space-y-6">
             <Link to="/" className="flex items-center">
-              <img src="/images/landing_page/Transparent_logo.png" alt="Radha Realty Logo" className="h-20 w-auto" />
+              <img src="/images/landing_page/landingpage_logo.png" alt="Radha Realty Logo" className="h-20 w-auto" />
             </Link>
             <p className="text-background/70 text-sm leading-relaxed">
               Your trusted partner in finding the perfect property. We connect dreams with addresses, making home ownership a reality.

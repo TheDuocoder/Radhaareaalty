@@ -109,6 +109,48 @@
   body {
     @apply bg-background text-foreground antialiased;
     font-feature-settings: "rlig" 1, "calt" 1;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+  }
+
+  /* Heading Typography */
+  h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    line-height: 1.3;
+  }
+
+  h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    line-height: 1.4;
+  }
+
+  h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  /* Paragraph Typography */
+  p {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.7;
+    letter-spacing: 0.3px;
+  }
+
+  /* Body Text Typography */
+  body, span, div, a, button, input, textarea {
+    font-family: 'Inter', sans-serif;
   }
 }
 

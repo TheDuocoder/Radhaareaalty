@@ -6,6 +6,7 @@ import Hero from "@/components/Hero";
 import PropertyCard from "@/components/PropertyCard";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import TestimonialCard from "@/components/TestimonialCard";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { Button } from "@/components/ui/button";
 import { properties, testimonials } from "@/data/properties";
 
@@ -131,6 +132,7 @@ const Home = () => {
       </section>
 
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 };

@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PropertyCard from "@/components/PropertyCard";
 import Filters from "@/components/Filters";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { Button } from "@/components/ui/button";
 import { properties, priceRanges } from "@/data/properties";
 
@@ -227,6 +228,7 @@ const Properties = () => {
       </section>
 
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 };

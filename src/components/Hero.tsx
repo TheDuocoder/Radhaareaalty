@@ -1,8 +1,54 @@
 import { useNavigate } from "react-router-dom";
+import { useEffect, useState, useRef } from "react";
 import SearchBar from "./SearchBar";
 
 const Hero = () => {
   const navigate = useNavigate();
+  const [counters, setCounters] = useState({ properties: 0, customers: 0, agents: 0 });
+  const statsRef = useRef<HTMLDivElement>(null);
+  const hasAnimated = useRef(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !hasAnimated.current) {
+          hasAnimated.current = true;
+          animateCounters();
+          observer.unobserve(entry.target);
+        }
+      },
+      { threshold: 0.5 }
+    );
+
+    if (statsRef.current) {
+      observer.observe(statsRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
+  const animateCounters = () => {
+    const targets = { properties: 2500, customers: 1800, agents: 150 };
+    const duration = 2000; // 2 seconds
+    const startTime = Date.now();
+
+    const animate = () => {
+      const elapsed = Date.now() - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+
+      setCounters({
+        properties: Math.floor(targets.properties * progress),
+        customers: Math.floor(targets.customers * progress),
+        agents: Math.floor(targets.agents * progress),
+      });
+
+      if (progress < 1) {
+        requestAnimationFrame(animate);
+      }
+    };
+
+    animate();
+  };
 
   const handleSearch = (filters: {
     location: string;
@@ -51,8 +97,12 @@ const Hero = () => {
 
           {/* Heading */}
           <h1
-            className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-background leading-tight animate-fade-in-up"
-            style={{ animationDelay: "0.1s" }}
+            className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-background leading-tight"
+            style={{
+              animation: "fadeUp 1s ease forwards",
+              opacity: 0,
+              animationDelay: "0.1s"
+            }}
           >
             Find Your{" "}
             <span style={{ color: "#7BC878" }}>Dream Home</span>
@@ -79,12 +129,13 @@ const Hero = () => {
 
           {/* Stats */}
           <div
+            ref={statsRef}
             className="grid grid-cols-3 gap-8 mt-16 animate-fade-in-up"
             style={{ animationDelay: "0.4s" }}
           >
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-background font-display">
-                2,500+
+                {counters.properties.toLocaleString()}+
               </div>
               <div className="text-sm text-background/70 mt-1">
                 Properties Listed
@@ -92,7 +143,7 @@ const Hero = () => {
             </div>
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-background font-display">
-                1,800+
+                {counters.customers.toLocaleString()}+
               </div>
               <div className="text-sm text-background/70 mt-1">
                 Happy Customers
@@ -100,7 +151,7 @@ const Hero = () => {
             </div>
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-background font-display">
-                150+
+                {counters.agents.toLocaleString()}+
               </div>
               <div className="text-sm text-background/70 mt-1">
                 Expert Agents
@@ -109,6 +160,19 @@ const Hero = () => {
           </div>
         </div>
       </div>
+
+      <style>{`
+        @keyframes fadeUp {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      `}</style>
     </section>
   );
 };
