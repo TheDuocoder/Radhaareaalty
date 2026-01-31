@@ -45,7 +45,7 @@ const Hero = () => {
           {/* Badge */}
           <div className="inline-flex items-center px-4 py-2 bg-background/10 backdrop-blur-sm rounded-full border border-background/20 animate-fade-in">
             <span className="text-sm font-medium text-background">
-              ✨ Over 2,000+ Properties Worldwide
+              ✨ Over 2,000+ Properties Bhubaneswar
             </span>
           </div>
 
