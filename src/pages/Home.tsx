@@ -71,7 +71,7 @@ const Home = () => {
             </h2>
             <p className="text-muted-foreground">
               Don't just take our word for it. Here's what our satisfied customers
-              have to say about their experience with Urbanet.
+              have to say about their experience with Radhaareaalty.
             </p>
           </div>
 

@@ -1,22 +1,29 @@
-# Welcome to your Lovable project
+# Radhaareaalty - Real Estate Platform
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+A modern real estate platform built with React, TypeScript, and Tailwind CSS to help users find their perfect properties in Odisha cities.
 
 ## How can I edit this code?
 
-There are several ways of editing your application.
+**Using your preferred IDE**
 
-**Use Lovable**
+Clone this repo and work locally using your favorite IDE:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+```bash
+git clone git@github.com:TheDuocoder/Radhaareaalty.git
+cd Radhaareaalty
+npm install
+npm run dev
+```
 
-Changes made via Lovable will be committed automatically to this repo.
+Push changes to the repository:
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+```bash
+git add .
+git commit -m "Your commit message"
+git push
+```
 
 The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
