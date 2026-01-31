@@ -14,7 +14,7 @@ const team = [
     name: "Sarah Johnson",
     role: "CEO & Founder",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80",
-    bio: "With over 20 years in real estate, Sarah founded Urbanet to transform the property buying experience.",
+    bio: "With over 20 years in real estate, Sarah founded Radhaareaalty to transform the property buying experience.",
   },
   {
     name: "Michael Chen",
@@ -44,15 +44,13 @@ const About = () => {
       {/* Hero Section */}
       <section className="pt-28 pb-20 urbanet-section">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="max-w-5xl mx-auto text-center">
             <span className="text-primary font-medium text-sm uppercase tracking-wider">
               About Us
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold font-display text-foreground mt-4 mb-6">
-              We Help You Find The Perfect Place
-            </h1>
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-display text-foreground mt-4 mb-6 leading-tight">We Help You Find The Perfect Place</h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              At Urbanet, we believe everyone deserves to find their perfect home.
+              At Radhaareaalty, we believe everyone deserves to find their perfect home.
               Our team of dedicated professionals works tirelessly to match you
               with properties that fit your lifestyle, needs, and dreams.
             </p>
@@ -73,7 +71,7 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  Urbanet was founded with a simple mission: to make property
+                  Radhaareaalty was founded with a simple mission: to make property
                   buying and selling transparent, efficient, and enjoyable. What
                   started as a small agency has grown into a trusted name in real
                   estate.

@@ -8,11 +8,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand Column */}
           <div className="space-y-6">
-            <Link to="/" className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-                <Home className="w-5 h-5 text-primary-foreground" />
-              </div>
-              <span className="text-xl font-bold font-display">Urbanet</span>
+            <Link to="/" className="flex items-center">
+              <img src="/images/landing_page/Transparent_logo.png" alt="Radha Realty Logo" className="h-20 w-auto" />
             </Link>
             <p className="text-background/70 text-sm leading-relaxed">
               Your trusted partner in finding the perfect property. We connect dreams with addresses, making home ownership a reality.
@@ -80,11 +77,6 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/properties?type=Condo" className="text-background/70 hover:text-background transition-colors text-sm">
-                  Condos
-                </Link>
-              </li>
-              <li>
                 <Link to="/properties?type=Penthouse" className="text-background/70 hover:text-background transition-colors text-sm">
                   Penthouses
                 </Link>
@@ -110,8 +102,8 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-primary flex-shrink-0" />
-                <a href="mailto:info@urbanet.com" className="text-background/70 hover:text-background transition-colors text-sm">
-                  info@urbanet.com
+                <a href="mailto:info@radhaareaalty.com" className="text-background/70 hover:text-background transition-colors text-sm">
+                  info@radhaareaalty.com
                 </a>
               </li>
             </ul>
@@ -121,7 +113,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-background/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-background/60 text-sm">
-            © {new Date().getFullYear()} Urbanet. All rights reserved.
+            © {new Date().getFullYear()} Radhaareaalty. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a href="#" className="text-background/60 hover:text-background transition-colors text-sm">

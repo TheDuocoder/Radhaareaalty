@@ -1,4 +1,4 @@
-import { MapPin, Home, DollarSign, Bed } from "lucide-react";
+import { MapPin, Home, IndianRupee, Bed } from "lucide-react";
 import { locations, propertyTypes, priceRanges, bedroomOptions } from "@/data/properties";
 import { Button } from "@/components/ui/button";
 
@@ -68,7 +68,7 @@ const Filters = ({ filters, onFilterChange, onReset }: FiltersProps) => {
         {/* Price Range */}
         <div>
           <label className="block text-sm font-medium text-foreground mb-3">
-            <DollarSign className="w-4 h-4 inline mr-2" />
+            <IndianRupee className="w-4 h-4 inline mr-2" />
             Price Range
           </label>
           <select

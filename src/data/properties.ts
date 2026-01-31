@@ -27,8 +27,8 @@ export const properties: Property[] = [
     id: 1,
     title: "Modern Luxury Villa with Pool",
     price: 2500000,
-    location: "Beverly Hills, CA",
-    city: "Los Angeles",
+    location: "Nayapalli, Bhubaneswar",
+    city: "Bhubaneswar",
     images: [
       "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80",
       "https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800&q=80",
@@ -43,7 +43,7 @@ export const properties: Property[] = [
     agent: {
       name: "Sarah Johnson",
       phone: "(310) 555-0123",
-      email: "sarah@urbanet.com",
+      email: "sarah@radhaareaalty.com",
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80",
     },
     featured: true,
@@ -54,8 +54,8 @@ export const properties: Property[] = [
     id: 2,
     title: "Downtown Luxury Penthouse",
     price: 1850000,
-    location: "Manhattan, NY",
-    city: "New York",
+    location: "Saheed Nagar, Bhubaneswar",
+    city: "Bhubaneswar",
     images: [
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&q=80",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80",
@@ -70,7 +70,7 @@ export const properties: Property[] = [
     agent: {
       name: "Michael Chen",
       phone: "(212) 555-0456",
-      email: "michael@urbanet.com",
+      email: "michael@radhaareaalty.com",
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80",
     },
     featured: true,
@@ -81,8 +81,8 @@ export const properties: Property[] = [
     id: 3,
     title: "Waterfront Contemporary Home",
     price: 1950000,
-    location: "Miami Beach, FL",
-    city: "Miami",
+    location: "Jatani",
+    city: "Jatani",
     images: [
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
       "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80",
@@ -97,7 +97,7 @@ export const properties: Property[] = [
     agent: {
       name: "Isabella Martinez",
       phone: "(305) 555-0789",
-      email: "isabella@urbanet.com",
+      email: "isabella@radhaareaalty.com",
       image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&q=80",
     },
     featured: true,
@@ -108,8 +108,8 @@ export const properties: Property[] = [
     id: 4,
     title: "Elegant Brownstone Apartment",
     price: 975000,
-    location: "Brooklyn Heights, NY",
-    city: "New York",
+    location: "Puri Beach, Puri",
+    city: "Puri",
     images: [
       "https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=800&q=80",
       "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&q=80",
@@ -124,7 +124,7 @@ export const properties: Property[] = [
     agent: {
       name: "Michael Chen",
       phone: "(212) 555-0456",
-      email: "michael@urbanet.com",
+      email: "michael@radhaareaalty.com",
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80",
     },
     featured: false,
@@ -135,8 +135,8 @@ export const properties: Property[] = [
     id: 5,
     title: "Modern Beachfront Condo",
     price: 850000,
-    location: "Santa Monica, CA",
-    city: "Los Angeles",
+    location: "Cuttack City",
+    city: "Cuttack",
     images: [
       "https://images.unsplash.com/photo-1600047509358-9dc75507daeb?w=800&q=80",
       "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&q=80",
@@ -151,7 +151,7 @@ export const properties: Property[] = [
     agent: {
       name: "Sarah Johnson",
       phone: "(310) 555-0123",
-      email: "sarah@urbanet.com",
+      email: "sarah@radhaareaalty.com",
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80",
     },
     featured: true,
@@ -162,8 +162,8 @@ export const properties: Property[] = [
     id: 6,
     title: "Historic Victorian Estate",
     price: 3200000,
-    location: "Pacific Heights, CA",
-    city: "San Francisco",
+    location: "Kharavela Nagar, Bhubaneswar",
+    city: "Bhubaneswar",
     images: [
       "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
@@ -178,7 +178,7 @@ export const properties: Property[] = [
     agent: {
       name: "David Thompson",
       phone: "(415) 555-0321",
-      email: "david@urbanet.com",
+      email: "david@radhaareaalty.com",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80",
     },
     featured: true,
@@ -189,8 +189,8 @@ export const properties: Property[] = [
     id: 7,
     title: "Sleek Urban Loft",
     price: 625000,
-    location: "Arts District, LA",
-    city: "Los Angeles",
+    location: "Jatani Bypass",
+    city: "Jatani",
     images: [
       "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
       "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80",
@@ -205,7 +205,7 @@ export const properties: Property[] = [
     agent: {
       name: "Sarah Johnson",
       phone: "(310) 555-0123",
-      email: "sarah@urbanet.com",
+      email: "sarah@radhaareaalty.com",
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80",
     },
     featured: false,
@@ -216,8 +216,8 @@ export const properties: Property[] = [
     id: 8,
     title: "Tropical Paradise Villa",
     price: 2100000,
-    location: "Coral Gables, FL",
-    city: "Miami",
+    location: "Puri Seafront",
+    city: "Puri",
     images: [
       "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800&q=80",
       "https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800&q=80",
@@ -232,7 +232,7 @@ export const properties: Property[] = [
     agent: {
       name: "Isabella Martinez",
       phone: "(305) 555-0789",
-      email: "isabella@urbanet.com",
+      email: "isabella@radhaareaalty.com",
       image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&q=80",
     },
     featured: false,
@@ -243,8 +243,8 @@ export const properties: Property[] = [
     id: 9,
     title: "Mountain View Retreat",
     price: 1450000,
-    location: "Aspen, CO",
-    city: "Aspen",
+    location: "Cuttack Industrial",
+    city: "Cuttack",
     images: [
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
       "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
@@ -259,7 +259,7 @@ export const properties: Property[] = [
     agent: {
       name: "David Thompson",
       phone: "(415) 555-0321",
-      email: "david@urbanet.com",
+      email: "david@radhaareaalty.com",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80",
     },
     featured: false,
@@ -270,8 +270,8 @@ export const properties: Property[] = [
     id: 10,
     title: "Chic Downtown Studio",
     price: 425000,
-    location: "Tribeca, NY",
-    city: "New York",
+    location: "Bhubaneswar Downtown",
+    city: "Bhubaneswar",
     images: [
       "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&q=80",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&q=80",
@@ -286,7 +286,7 @@ export const properties: Property[] = [
     agent: {
       name: "Michael Chen",
       phone: "(212) 555-0456",
-      email: "michael@urbanet.com",
+      email: "michael@radhaareaalty.com",
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80",
     },
     featured: false,
@@ -297,8 +297,8 @@ export const properties: Property[] = [
     id: 11,
     title: "Luxurious Golf Course Estate",
     price: 2850000,
-    location: "Scottsdale, AZ",
-    city: "Scottsdale",
+    location: "Jatani Township",
+    city: "Jatani",
     images: [
       "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80",
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
@@ -313,7 +313,7 @@ export const properties: Property[] = [
     agent: {
       name: "Sarah Johnson",
       phone: "(310) 555-0123",
-      email: "sarah@urbanet.com",
+      email: "sarah@radhaareaalty.com",
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80",
     },
     featured: true,
@@ -324,8 +324,8 @@ export const properties: Property[] = [
     id: 12,
     title: "Charming City Townhouse",
     price: 1125000,
-    location: "Georgetown, DC",
-    city: "Washington DC",
+    location: "Cuttack Heritage",
+    city: "Cuttack",
     images: [
       "https://images.unsplash.com/photo-1600573472592-401b489a3cdc?w=800&q=80",
       "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&q=80",
@@ -340,7 +340,7 @@ export const properties: Property[] = [
     agent: {
       name: "David Thompson",
       phone: "(415) 555-0321",
-      email: "david@urbanet.com",
+      email: "david@radhaareaalty.com",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80",
     },
     featured: false,
@@ -349,17 +349,17 @@ export const properties: Property[] = [
   },
 ];
 
-export const locations = ["All Locations", "Los Angeles", "New York", "Miami", "San Francisco", "Aspen", "Scottsdale", "Washington DC"];
+export const locations = ["All Locations", "Bhubaneswar", "Jatani", "Puri", "Cuttack", "Khordha"];
 
-export const propertyTypes = ["All Types", "Apartment", "House", "Villa", "Condo", "Penthouse"];
+export const propertyTypes = ["All Types", "Apartment", "House", "Villa", "Penthouse"];
 
 export const priceRanges = [
   { label: "Any Price", min: 0, max: Infinity },
-  { label: "Under $500K", min: 0, max: 500000 },
-  { label: "$500K - $1M", min: 500000, max: 1000000 },
-  { label: "$1M - $2M", min: 1000000, max: 2000000 },
-  { label: "$2M - $3M", min: 2000000, max: 3000000 },
-  { label: "$3M+", min: 3000000, max: Infinity },
+  { label: "Under ₹25L", min: 0, max: 2500000 },
+  { label: "₹25L - ₹50L", min: 2500000, max: 5000000 },
+  { label: "₹50L - ₹1Cr", min: 5000000, max: 10000000 },
+  { label: "₹1Cr - ₹2Cr", min: 10000000, max: 20000000 },
+  { label: "₹2Cr+", min: 20000000, max: Infinity },
 ];
 
 export const bedroomOptions = ["Any", "Studio", "1+", "2+", "3+", "4+", "5+"];
@@ -370,7 +370,7 @@ export const testimonials = [
     name: "Jennifer Williams",
     role: "Homeowner",
     image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80",
-    review: "Urbanet made finding our dream home effortless. The team was professional, responsive, and truly understood what we were looking for. Couldn't be happier!",
+    review: "Radhaareaalty made finding our dream home effortless. The team was professional, responsive, and truly understood what we were looking for. Couldn't be happier!",
     rating: 5,
   },
   {
@@ -378,7 +378,7 @@ export const testimonials = [
     name: "Robert Martinez",
     role: "Property Investor",
     image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80",
-    review: "As an investor, I need a reliable partner who understands the market. Urbanet has consistently delivered exceptional properties and invaluable market insights.",
+    review: "As an investor, I need a reliable partner who understands the market. Radhaareaalty has consistently delivered exceptional properties and invaluable market insights.",
     rating: 5,
   },
   {
@@ -386,7 +386,7 @@ export const testimonials = [
     name: "Emily Chen",
     role: "First-time Buyer",
     image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&q=80",
-    review: "Being a first-time buyer was overwhelming, but the Urbanet team guided me through every step. They found me the perfect apartment within my budget!",
+    review: "Being a first-time buyer was overwhelming, but the Radhaareaalty team guided me through every step. They found me the perfect apartment within my budget!",
     rating: 5,
   },
 ];

@@ -63,7 +63,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email Us",
-      lines: ["info@urbanet.com", "support@urbanet.com"],
+      lines: ["info@radhaareaalty.com", "support@radhaareaalty.com"],
     },
     {
       icon: Clock,

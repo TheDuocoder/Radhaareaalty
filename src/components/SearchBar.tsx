@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Search, MapPin, Home, DollarSign } from "lucide-react";
+import { Search, MapPin, Home, IndianRupee } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { locations, propertyTypes, priceRanges } from "@/data/properties";
 
@@ -75,7 +75,7 @@ const SearchBar = ({ onSearch }: SearchBarProps) => {
             Price Range
           </label>
           <div className="relative">
-            <DollarSign className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
+            <IndianRupee className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
             <select
               value={priceIndex}
               onChange={(e) => setPriceIndex(Number(e.target.value))}
@@ -94,7 +94,8 @@ const SearchBar = ({ onSearch }: SearchBarProps) => {
         <div className="flex items-end">
           <Button
             onClick={handleSearch}
-            className="w-full h-12 urbanet-gradient text-primary-foreground hover:opacity-90 transition-opacity rounded-xl"
+            style={{ backgroundColor: "#7BC878", color: "#000000" }}
+            className="w-full h-12 hover:opacity-90 transition-opacity rounded-xl font-semibold"
           >
             <Search className="w-4 h-4 mr-2" />
             Search

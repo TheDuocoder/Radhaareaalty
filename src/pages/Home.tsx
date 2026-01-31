@@ -100,7 +100,7 @@ const Home = () => {
               </h2>
               <p className="text-primary-foreground/80 mb-8">
                 Join thousands of happy homeowners who found their perfect property
-                with Urbanet. Start your journey today.
+                with Radhaareaalty. Start your journey today.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link to="/properties">
@@ -114,8 +114,8 @@ const Home = () => {
                 <Link to="/contact">
                   <Button
                     size="lg"
-                    variant="outline"
-                    className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10"
+                    style={{ backgroundColor: "#ffffff", color: "#000000" }}
+                    className="font-semibold hover:opacity-90"
                   >
                     Contact Us
                   </Button>

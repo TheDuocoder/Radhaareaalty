@@ -21,13 +21,8 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-lg urbanet-gradient flex items-center justify-center">
-              <Home className="w-5 h-5 text-primary-foreground" />
-            </div>
-            <span className="text-xl font-bold font-display text-foreground">
-              Urbanet
-            </span>
+          <Link to="/" className="flex items-center">
+            <img src="/images/landing_page/Transparent_logo.png" alt="Radha Realty Logo" className="h-24 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -49,7 +44,7 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button className="urbanet-gradient text-primary-foreground hover:opacity-90 transition-opacity">
+            <Button style={{ backgroundColor: "#7BC878", color: "#000000" }} className="hover:opacity-90 transition-opacity font-semibold">
               Add Property
             </Button>
           </div>

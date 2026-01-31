@@ -32,7 +32,7 @@ const Hero = () => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80')",
+            "url('/images/landing_page/landingpageimage.png')",
         }}
       />
 
@@ -55,9 +55,9 @@ const Hero = () => {
             style={{ animationDelay: "0.1s" }}
           >
             Find Your{" "}
-            <span className="text-primary">Dream Home</span>
+            <span style={{ color: "#7BC878" }}>Dream Home</span>
             <br />
-            With Ease
+            With Radhaareaalty
           </h1>
 
           {/* Subtitle */}
