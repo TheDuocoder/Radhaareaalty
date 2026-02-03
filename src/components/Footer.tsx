@@ -93,8 +93,8 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-lg mb-6">Contact Us</h3>
             <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+              <li className="flex items-center gap-3">
+                <MapPin className="w-5 h-5 text-primary flex-shrink-0" />
                 <span className="text-background/70 text-sm">
                   Radhaa Reaalty, Plot no -144/5506/5809<br />
                   Prasanti Vihar, Patia, Bhubaneswar- 751024
