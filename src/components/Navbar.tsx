@@ -32,7 +32,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo with Brand Text */}
-          <Link to="/" className="flex items-center gap-0 -ml-8">
+          <Link to="/" className="flex items-center gap-3 -ml-14">
             <img src="/images/landing_page/logoo1.png" alt="Radha Realty Logo" className="h-24 w-auto" />
             <div className="hidden sm:flex flex-col leading-tight -ml-6">
               <span className="text-lg font-bold font-display uppercase tracking-wide" style={{ color: "#859a2e" }}>Radhaa Reaalty</span>
@@ -41,7 +41,7 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-8 -ml-24">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
