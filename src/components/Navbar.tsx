@@ -31,9 +31,13 @@ const Navbar = () => {
     <nav className={`navbar ${hasScrolled ? "shadow-md" : ""}`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo */}
-          <Link to="/" className="flex items-center">
-            <img src="/images/landing_page/landingpage_logo.png" alt="Radha Realty Logo" className="h-24 w-auto" />
+          {/* Logo with Brand Text */}
+          <Link to="/" className="flex items-center gap-0 -ml-8">
+            <img src="/images/landing_page/logoo1.png" alt="Radha Realty Logo" className="h-24 w-auto" />
+            <div className="hidden sm:flex flex-col leading-tight -ml-6">
+              <span className="text-lg font-bold font-display uppercase tracking-wide" style={{ color: "#859a2e" }}>Radhaa Reaalty</span>
+              <span className="text-xs font-medium text-primary uppercase tracking-wide">Your home crafted with love</span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -42,7 +46,7 @@ const Navbar = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`nav-link text-sm font-medium transition-colors ${
+                className={`nav-link text-sm font-semibold transition-colors ${
                   isActive(link.path)
                     ? "text-primary"
                     : "text-muted-foreground"

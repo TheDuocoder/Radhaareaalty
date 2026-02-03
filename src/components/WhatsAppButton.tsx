@@ -1,5 +1,5 @@
 const WhatsAppButton = () => {
-  const whatsappNumber = "918260607163"; // Radhaareaalty WhatsApp number
+  const whatsappNumber = "919937656613"; // Radhaareaalty WhatsApp number
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=Hello%20Radhaareaalty%2C%20I%20would%20like%20to%20know%20more%20about%20your%20properties.`;
 
   return (

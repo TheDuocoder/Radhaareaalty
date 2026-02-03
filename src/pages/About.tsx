@@ -4,9 +4,9 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 const stats = [
-  { icon: Building, value: "2,500+", label: "Properties Sold" },
-  { icon: Users, value: "1,800+", label: "Happy Clients" },
-  { icon: Award, value: "15+", label: "Years Experience" },
+  { icon: Building, value: "2,400+", label: "Properties Sold" },
+  { icon: Users, value: "1,500+", label: "Happy Clients" },
+  { icon: Award, value: "6+", label: "Years of Excellence" },
   { icon: Globe, value: "50+", label: "Cities Covered" },
 ];
 
@@ -68,7 +68,7 @@ const About = () => {
                 Our Story
               </span>
               <h2 className="text-3xl md:text-4xl font-bold font-display text-foreground mt-4 mb-6">
-                Building Dreams Since 2008
+                Building Dreams Since 2019
               </h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
@@ -97,7 +97,7 @@ const About = () => {
                 className="rounded-2xl shadow-urbanet-xl"
               />
               <div className="absolute -bottom-6 -left-6 bg-primary text-primary-foreground p-6 rounded-2xl">
-                <div className="text-4xl font-bold font-display">15+</div>
+                <div className="text-4xl font-bold font-display">6+</div>
                 <div className="text-sm opacity-80">Years of Excellence</div>
               </div>
             </div>

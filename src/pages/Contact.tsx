@@ -55,12 +55,12 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Visit Us",
-      lines: ["123 Real Estate Avenue", "Suite 100, New York, NY 10001"],
+      lines: ["Radhaa Reaalty", "Plot no -144/5506/5809", "Prasanti Vihar, Patia, Bhubaneswar- 751024"],
     },
     {
       icon: Phone,
       title: "Call Us",
-      lines: ["(123) 456-7890", "(123) 456-7891"],
+      lines: ["+91-9937656613"],
     },
     {
       icon: Mail,
@@ -184,7 +184,7 @@ const Contact = () => {
                         type="tel"
                         value={formData.phone}
                         onChange={handleChange}
-                        placeholder="(123) 456-7890"
+                        placeholder="+91-9937850611"
                         className="rounded-xl"
                       />
                     </div>

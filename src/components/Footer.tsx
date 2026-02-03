@@ -68,7 +68,12 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/properties?type=House" className="text-background/70 hover:text-background transition-colors text-sm">
-                  Houses
+                  Individual Houses
+                </Link>
+              </li>
+              <li>
+                <Link to="/properties?type=Plots" className="text-background/70 hover:text-background transition-colors text-sm">
+                  Plots
                 </Link>
               </li>
               <li>
@@ -91,13 +96,14 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                 <span className="text-background/70 text-sm">
-                  123 Real Estate Avenue, Suite 100, New York, NY 10001
+                  Radhaa Reaalty, Plot no -144/5506/5809<br />
+                  Prasanti Vihar, Patia, Bhubaneswar- 751024
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary flex-shrink-0" />
-                <a href="tel:+1234567890" className="text-background/70 hover:text-background transition-colors text-sm">
-                  (123) 456-7890
+                <a href="tel:+919937656613" className="text-background/70 hover:text-background transition-colors text-sm">
+                  +91-9937656613
                 </a>
               </li>
               <li className="flex items-center gap-3">

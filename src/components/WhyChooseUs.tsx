@@ -3,13 +3,13 @@ import { Shield, CheckCircle, Wallet, Headphones } from "lucide-react";
 const features = [
   {
     icon: Shield,
-    title: "Trusted Agents",
+    title: "Trusted Developer",
     description:
-      "Work with verified, experienced agents who prioritize your needs and goals.",
+      "Work with verified, experienced developers who prioritize your needs and goals.",
   },
   {
     icon: CheckCircle,
-    title: "Verified Properties",
+    title: "100% Verified Properties",
     description:
       "Every listing is thoroughly vetted to ensure accuracy and transparency.",
   },

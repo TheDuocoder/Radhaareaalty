@@ -28,7 +28,7 @@ const Hero = () => {
   }, []);
 
   const animateCounters = () => {
-    const targets = { properties: 2500, customers: 1800, agents: 150 };
+    const targets = { properties: 2400, customers: 1500, agents: 5 };
     const duration = 2000; // 2 seconds
     const startTime = Date.now();
 
@@ -89,8 +89,24 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 py-20 text-center">
         <div className="max-w-4xl mx-auto space-y-8">
           {/* Badge */}
-          <div className="inline-flex items-center px-4 py-2 bg-background/10 backdrop-blur-sm rounded-full border border-background/20 animate-fade-in">
-            <span className="text-sm font-medium text-background">
+          <div className="inline-flex items-center px-4 py-2 bg-background/10 backdrop-blur-sm rounded-full border border-background/20 animate-fade-in" style={{
+            perspective: "1000px",
+            transform: "rotateX(8deg) rotateZ(0deg)",
+            boxShadow: `
+              0 4px 6px rgba(0,0,0,0.1),
+              0 8px 12px rgba(0,0,0,0.15),
+              0 12px 20px rgba(0,0,0,0.2),
+              inset 0 1px 0 rgba(255,255,255,0.3)
+            `,
+            transition: "transform 0.3s ease"
+          }}>
+            <span className="text-sm font-medium text-background" style={{
+              textShadow: `
+                1px 1px 2px rgba(0,0,0,0.2),
+                2px 2px 4px rgba(0,0,0,0.15)
+              `,
+              letterSpacing: "0.5px"
+            }}>
               ✨ Over 2,000+ Properties Bhubaneswar
             </span>
           </div>
@@ -101,11 +117,28 @@ const Hero = () => {
             style={{
               animation: "fadeUp 1s ease forwards",
               opacity: 0,
-              animationDelay: "0.1s"
+              animationDelay: "0.1s",
+              perspective: "1000px",
+              transform: "rotateX(5deg) rotateY(-5deg)",
+              textShadow: `
+                2px 2px 4px rgba(0,0,0,0.3),
+                4px 4px 8px rgba(0,0,0,0.2),
+                6px 6px 12px rgba(0,0,0,0.15),
+                -1px -1px 2px rgba(255,255,255,0.2)
+              `,
+              letterSpacing: "0.02em"
             }}
           >
             Find Your{" "}
-            <span style={{ color: "#859a2e" }}>Dream Home</span>
+            <span style={{ 
+              color: "#859a2e",
+              textShadow: `
+                2px 2px 4px rgba(0,0,0,0.3),
+                4px 4px 8px rgba(0,0,0,0.2),
+                6px 6px 12px rgba(0,0,0,0.15),
+                0px 0px 20px rgba(132, 154, 46, 0.4)
+              `
+            }}>Dream Home</span>
             <br />
             With Radhaareaalty
           </h1>
@@ -133,27 +166,81 @@ const Hero = () => {
             className="grid grid-cols-3 gap-8 mt-16 animate-fade-in-up"
             style={{ animationDelay: "0.4s" }}
           >
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-background font-display">
+            <div className="text-center" style={{
+              boxShadow: `
+                0 4px 8px rgba(0,0,0,0.15),
+                0 8px 16px rgba(0,0,0,0.2),
+                0 12px 24px rgba(0,0,0,0.25),
+                inset 0 1px 0 rgba(255,255,255,0.2)
+              `,
+              borderRadius: "12px",
+              padding: "16px",
+              transition: "all 0.3s ease"
+            }}>
+              <div className="text-3xl md:text-4xl font-bold text-background font-display" style={{
+                textShadow: `
+                  2px 2px 4px rgba(0,0,0,0.2),
+                  4px 4px 8px rgba(0,0,0,0.15)
+                `,
+                letterSpacing: "0.05em"
+              }}>
                 {counters.properties.toLocaleString()}+
               </div>
-              <div className="text-sm text-background/70 mt-1">
+              <div className="text-sm text-background/70 mt-1" style={{
+                textShadow: "1px 1px 2px rgba(0,0,0,0.1)"
+              }}>
                 Properties Listed
               </div>
             </div>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-background font-display">
+            <div className="text-center" style={{
+              boxShadow: `
+                0 4px 8px rgba(0,0,0,0.15),
+                0 8px 16px rgba(0,0,0,0.2),
+                0 12px 24px rgba(0,0,0,0.25),
+                inset 0 1px 0 rgba(255,255,255,0.2)
+              `,
+              borderRadius: "12px",
+              padding: "16px",
+              transition: "all 0.3s ease"
+            }}>
+              <div className="text-3xl md:text-4xl font-bold text-background font-display" style={{
+                textShadow: `
+                  2px 2px 4px rgba(0,0,0,0.2),
+                  4px 4px 8px rgba(0,0,0,0.15)
+                `,
+                letterSpacing: "0.05em"
+              }}>
                 {counters.customers.toLocaleString()}+
               </div>
-              <div className="text-sm text-background/70 mt-1">
+              <div className="text-sm text-background/70 mt-1" style={{
+                textShadow: "1px 1px 2px rgba(0,0,0,0.1)"
+              }}>
                 Happy Customers
               </div>
             </div>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-background font-display">
+            <div className="text-center" style={{
+              boxShadow: `
+                0 4px 8px rgba(0,0,0,0.15),
+                0 8px 16px rgba(0,0,0,0.2),
+                0 12px 24px rgba(0,0,0,0.25),
+                inset 0 1px 0 rgba(255,255,255,0.2)
+              `,
+              borderRadius: "12px",
+              padding: "16px",
+              transition: "all 0.3s ease"
+            }}>
+              <div className="text-3xl md:text-4xl font-bold text-background font-display" style={{
+                textShadow: `
+                  2px 2px 4px rgba(0,0,0,0.2),
+                  4px 4px 8px rgba(0,0,0,0.15)
+                `,
+                letterSpacing: "0.05em"
+              }}>
                 {counters.agents.toLocaleString()}+
               </div>
-              <div className="text-sm text-background/70 mt-1">
+              <div className="text-sm text-background/70 mt-1" style={{
+                textShadow: "1px 1px 2px rgba(0,0,0,0.1)"
+              }}>
                 Expert Agents
               </div>
             </div>
