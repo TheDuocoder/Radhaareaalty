@@ -251,13 +251,17 @@ const Contact = () => {
       {/* Map Section */}
       <section className="py-12 urbanet-section">
         <div className="container mx-auto px-4">
-          <div className="rounded-2xl overflow-hidden h-96 bg-secondary flex items-center justify-center">
-            <div className="text-center">
-              <MapPin className="w-12 h-12 text-primary mx-auto mb-4" />
-              <p className="text-muted-foreground">
-                Map integration would go here
-              </p>
-            </div>
+          <div className="rounded-2xl overflow-hidden h-96 shadow-urbanet">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3740.5921867623955!2d85.82065971492147!3d20.36363408636173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjDCsDIxJzQ5LjEiTiA4NcKwNDknMjMuNiJF!5e0!3m2!1sen!2sin!4v1738860721000!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Radhaa Reaalty Location"
+            ></iframe>
           </div>
         </div>
       </section>
