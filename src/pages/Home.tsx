@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import PropertyCard from "@/components/PropertyCard";
 import WhyChooseUs from "@/components/WhyChooseUs";
+import OurPartners from "@/components/OurPartners";
 import TestimonialCard from "@/components/TestimonialCard";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { Button } from "@/components/ui/button";
@@ -58,6 +59,9 @@ const Home = () => {
 
       {/* Why Choose Us Section */}
       <WhyChooseUs />
+
+      {/* Our Partners Section */}
+      <OurPartners />
 
       {/* Testimonials Section */}
       <section className="py-20 urbanet-section">
