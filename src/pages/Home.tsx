@@ -8,6 +8,7 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 import OurPartners from "@/components/OurPartners";
 import TestimonialCard from "@/components/TestimonialCard";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { properties, testimonials } from "@/data/properties";
 
@@ -16,6 +17,10 @@ const Home = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO 
+        title="Best Real Estate Agency in Bhubaneswar" 
+        description="Radhaa Reaalty is your trusted partner for high-end residential and commercial properties in Bhubaneswar. Explore premium villas, flats, and plots today."
+      />
       <Navbar />
 
       {/* Hero Section */}

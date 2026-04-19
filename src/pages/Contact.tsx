@@ -3,6 +3,7 @@ import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -76,16 +77,20 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO 
+        title="Contact Us - Let's Talk Property" 
+        description="Have questions about a property or need help with your real estate search? Contact Radhaa Reaalty's expert team in Bhubaneswar for personalized assistance."
+      />
       <Navbar />
 
       {/* Hero Section */}
-      <section className="pt-28 pb-20 urbanet-section">
+      <section className="pt-20 md:pt-28 pb-12 md:pb-20 urbanet-section">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <span className="text-primary font-medium text-sm uppercase tracking-wider">
               Get In Touch
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold font-display text-foreground mt-4 mb-6">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold font-display text-foreground mt-4 mb-6">
               Contact Us
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
@@ -97,7 +102,7 @@ const Contact = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20">
+      <section className="py-12 md:py-20">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {/* Contact Info */}
@@ -127,7 +132,7 @@ const Contact = () => {
 
             {/* Contact Form */}
             <div className="lg:col-span-2">
-              <div className="bg-card rounded-2xl p-8 shadow-urbanet">
+              <div className="bg-card rounded-2xl p-4 sm:p-8 shadow-urbanet">
                 <h2 className="text-2xl font-bold font-display text-foreground mb-6">
                   Send Us a Message
                 </h2>
@@ -249,7 +254,7 @@ const Contact = () => {
       </section>
 
       {/* Map Section */}
-      <section className="py-12 urbanet-section">
+      <section className="py-8 md:py-12 urbanet-section">
         <div className="container mx-auto px-4">
           <div className="rounded-2xl overflow-hidden h-96 shadow-urbanet">
             <iframe

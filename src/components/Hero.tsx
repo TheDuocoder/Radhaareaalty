@@ -113,7 +113,7 @@ const Hero = () => {
 
           {/* Heading */}
           <h1
-            className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-background leading-tight"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-display text-background leading-tight"
             style={{
               animation: "fadeUp 1s ease forwards",
               opacity: 0,
@@ -138,8 +138,8 @@ const Hero = () => {
                 6px 6px 12px rgba(0,0,0,0.15),
                 0px 0px 20px rgba(132, 154, 46, 0.4)
               `
-            }}>Dream Home</span>
-            <br />
+            }}>Dream Home</span>{" "}
+            <br className="hidden sm:block" />
             With Radhaareaalty
           </h1>
 
@@ -163,7 +163,7 @@ const Hero = () => {
           {/* Stats */}
           <div
             ref={statsRef}
-            className="grid grid-cols-3 gap-8 mt-16 animate-fade-in-up"
+            className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-8 mt-12 md:mt-16 animate-fade-in-up"
             style={{ animationDelay: "0.4s" }}
           >
             <div className="text-center" style={{

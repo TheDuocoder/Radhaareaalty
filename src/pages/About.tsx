@@ -2,6 +2,7 @@ import { Users, Award, Building, Globe } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import SEO from "@/components/SEO";
 
 const stats = [
   { icon: Building, value: "2,400+", label: "Properties Sold" },
@@ -40,16 +41,20 @@ const team = [
 const About = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO 
+        title="About Us - Our Story & Mission" 
+        description="Learn more about Radhaa Reaalty, our commitment to excellence, and how we've been helping families find their dream homes since 2019."
+      />
       <Navbar />
 
       {/* Hero Section */}
-      <section className="pt-28 pb-20 urbanet-section">
+      <section className="pt-20 md:pt-28 pb-12 md:pb-20 urbanet-section">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto text-center">
             <span className="text-primary font-medium text-sm uppercase tracking-wider">
               About Us
             </span>
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-display text-foreground mt-4 mb-6 leading-tight">We Help You Find The Perfect Place</h1>
+            <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold font-display text-foreground mt-4 mb-6 leading-tight">We Help You Find The Perfect Place</h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
               At Radhaareaalty, we believe everyone deserves to find their perfect home.
               Our team of dedicated professionals works tirelessly to match you
@@ -60,7 +65,7 @@ const About = () => {
       </section>
 
       {/* Story Section */}
-      <section className="py-20">
+      <section className="py-12 md:py-20">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -112,7 +117,7 @@ const About = () => {
             {stats.map((stat, index) => (
               <div
                 key={stat.label}
-                className="text-center p-8 bg-card rounded-2xl shadow-urbanet animate-fade-in"
+                className="text-center p-4 sm:p-8 bg-card rounded-2xl shadow-urbanet animate-fade-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="w-14 h-14 mx-auto mb-4 rounded-2xl urbanet-gradient flex items-center justify-center">
@@ -129,7 +134,7 @@ const About = () => {
       </section>
 
       {/* Team Section */}
-      <section className="py-20">
+      <section className="py-12 md:py-20">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <span className="text-primary font-medium text-sm uppercase tracking-wider">
@@ -174,7 +179,7 @@ const About = () => {
       </section>
 
       {/* Mission Section */}
-      <section className="py-20 urbanet-section">
+      <section className="py-12 md:py-20 urbanet-section">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">

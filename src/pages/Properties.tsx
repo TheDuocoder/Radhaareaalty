@@ -8,6 +8,7 @@ import Filters from "@/components/Filters";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { Button } from "@/components/ui/button";
 import { properties, priceRanges } from "@/data/properties";
+import SEO from "@/components/SEO";
 
 const ITEMS_PER_PAGE = 6;
 
@@ -97,13 +98,17 @@ const Properties = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO 
+        title="Premium Property Listings" 
+        description="Browse our wide selection of luxury villas, apartments, and residential plots in Bhubaneswar. Find the perfect home that fits your lifestyle."
+      />
       <Navbar />
 
       {/* Header */}
-      <section className="pt-28 pb-12 urbanet-section">
+      <section className="pt-20 md:pt-28 pb-8 md:pb-12 urbanet-section">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-2xl mx-auto">
-            <h1 className="text-3xl md:text-4xl font-bold font-display text-foreground mb-4">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold font-display text-foreground mb-4">
               Find Your Perfect Property
             </h1>
             <p className="text-muted-foreground">

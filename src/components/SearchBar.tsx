@@ -26,8 +26,8 @@ const SearchBar = ({ onSearch }: SearchBarProps) => {
   };
 
   return (
-    <div className="search-box w-full max-w-4xl mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+    <div className="search-box w-full max-w-4xl mx-auto text-left">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4 px-4 md:px-0">
         {/* Location */}
         <div className="relative">
           <label className="block text-xs font-medium text-muted-foreground mb-2">
